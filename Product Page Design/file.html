@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page Design</title>
+    <link href="file.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="gallery">
+          <img src="image1.png" id="productImg" />
+          <div class="controls">
+            <span class="btn active"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+          </div>
+        </div>
+        <div class="details">
+          <h1>Casual T-Shirt</h1>
+          <h2>TK 1500</h2>
+          <h3>20% Off</h3>
+          <p>
+            At ThreadRevolution, we're passionate about transforming the
+            everyday tee into a canvas for self-expression and innovation.
+            Founded on the belief that a great t-shirt should be as dynamic as
+            the people who wear it, we use cutting-edge sustainable fabrics and
+            vibrant, eco-friendly inks to create designs that pop.
+          </p>
+          <form>
+            <div class="size-select">
+              <p>Size</p>
+              <label for="small">
+                <input type="radio" name="size" id="small" />
+                <span>S</span>
+              </label>
+              <label for="medium">
+                <input type="radio" name="size" id="medium" />
+                <span>M</span>
+              </label>
+              <label for="large">
+                <input type="radio" name="size" id="large" />
+                <span>L</span>
+              </label>
+              <label for="x-large">
+                <input type="radio" name="size" id="x-large" />
+                <span>XL</span>
+              </label>
+              <label for="xx-large">
+                <input type="radio" name="size" id="xx-large" />
+                <span>XXL</span>
+              </label>
+            </div>
+            <div class="color-select">
+              <p>Color</p>
+              <label for="red">
+                <input type="radio" name="color" id="red" />
+                <span class="color-1"></span>
+              </label>
+              <label for="green">
+                <input type="radio" name="color" id="green" />
+                <span class="color-2"></span>
+              </label>
+              <label for="blue">
+                <input type="radio" name="color" id="blue" />
+                <span class="color-3"></span>
+              </label>
+              <label for="turquoise">
+                <input type="radio" name="color" id="turquoise" />
+                <span class="color-4"></span>
+              </label>
+            </div>
+            <div class="quantity-select">
+              <p>Quantity</p>
+              <input type="number" value="1" />
+            </div>
+            <button>Buy Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="file.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Progress Bar</title>
+    <link href="file.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="progress-container">
+      <svg class="progress-ring" width="200" height="200">
+        <circle
+          class="progress-ring-circle"
+          stroke="#d9d9d9"
+          stroke-width="15"
+          r="90"
+          cx="100"
+          cy="100"
+        />
+        <circle
+          class="progress-ring-circle"
+          data-progress="0"
+          stroke="#4db8ff"
+          stroke-width="15"
+          r="90"
+          cx="100"
+          cy="100"
+        />
+      </svg>
+      <div id="progress-text">0%</div>
+    </div>
+
+    <input
+      type="number"
+      id="percentInput"
+      placeholder="Enter percentage (0-100)"
+      min="0"
+      max="100"
+    />
+    <button onclick="updateProgressManually()">Set Progress</button>
+
+    <script src="file.js"></script>
+  </body>
+</html>
